@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap");
+:root {
+  /* Tipo de letra utilizados */
+  --tipo-letra: "Poppins", sans-serif;
+  /* Colores */
+  --color-principal-fondo: linear-gradient(45deg, rgba(93, 193, 185, 1) 20%, #43c6ac, rgba(255, 99, 71, 1) 100%);
+  --color-negro: rgba(0, 0, 0);
+  --colo-blanco: rgba(255, 255, 255);
+  --color-tarjeta-1: linear-gradient(45deg, #3503ad, #f7308c);
+  --color-tarjeta-2: linear-gradient(45deg, #ccff00, #09afff);
+  --color-tarjeta-3: linear-gradient(45deg, #e91e63, #ffeb3b);
+  --color-tarjeta-4: linear-gradient(45deg, #1CB5E0, #000851);
+  --color-tarjeta-5: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
+  --color-tarjeta-6: linear-gradient(45deg, #f8ff00 0%, #3ad59f 100%);
+  --color-tarjeta-7: linear-gradient(45deg, #FDBB2D 0%, #3Aaaaf 100%);
+  --color-tarjeta-8: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+  --color-tarjeta-9: linear-gradient(45deg, #d53369 0%, #daae51 100%);
+  --color-tarjeta-10: linear-gradient(45deg, #2bc0e4, #eaecc6);
+  --color-tarjeta-11: linear-gradient(45deg, #00f260, #0575e6);
+  --color-tarjeta-12: linear-gradient(45deg, #283c86, #45a247);
+  --color-tarjeta-13: linear-gradient(45deg, #4568dc, #b06ab3);
+  --color-tarjeta-14: linear-gradient(45deg, #43c6ac, #191654);
+  --color-tarjeta-15: linear-gradient(45deg, #093028, #237a57);
+  --color-tarjeta-16: linear-gradient(45deg, #43c6ac, #f8ffae);
+  --color-tarjeta-17: linear-gradient(45deg, #ffafbd, #ffc3a0);
+  --color-tarjeta-18: linear-gradient(45deg, #e8cbc0, #636fa4);
+  --color-tarjeta-19: linear-gradient(45deg, #fceabb, #f8b500);
+  --color-tarjeta-20: linear-gradient(45deg, #ee0979, #ff6a00);
+  --color-tarjeta-21: linear-gradient(45deg, #de6161, #2657eb);
+  --color-tarjeta-22: linear-gradient(45deg, #ef32d9, #89fffd);
+  --color-tarjeta-23: linear-gradient(45deg, #ffd89b, #19547b);
+}
+
+* {
+  font-family: var(--tipo-letra);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--color-principal-fondo);
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+.banner .content-b {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .content-b h1 {
+  position: absolute;
+  top: 90px;
+  color: #fff;
+  z-index: 1;
+  animation-delay: 3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner .content-b h1 p {
+  margin: 0;
+  font-size: 100px;
+}
+@media (max-width: 1024px) {
+  .banner .content-b h1 {
+    top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .banner .content-b h1 {
+    top: 0;
+  }
+}
+@media (max-width: 450px) {
+  .banner .content-b h1 {
+    top: 100px;
+  }
+  .banner .content-b h1 p {
+    font-size: 65px;
+  }
+}
+.banner .imgBn {
+  width: 100%;
+  height: 100vh;
+}
+.banner .imgBn img {
+  position: relative;
+  top: -180px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+}
+
+.titulo-frases {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+}
+
+.frases {
+  margin: 20px auto;
+  width: 90%;
+}
+.frases .frase {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: auto 0;
+}
+.frases .frase .imgF {
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+.frases .frase .imgF img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.frases .frase .contentF {
+  width: 90%;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.frases .frase .contentF h2 {
+  margin: 0;
+  font-size: 3em;
+  color: #fff;
+}
+.frases .frase .contentF p {
+  color: #fff;
+  font-size: 20px;
+}
+@media (max-width: 1024px) {
+  .frases .frase {
+    top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .frases .frase .contentF p {
+    height: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .frases .frase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .frases .frase .imgF {
+    width: 250px;
+    height: 250px;
+  }
+  .frases .frase .contentF h2 {
+    text-align: center;
+  }
+  .frases .frase:nth-child(even) .contentF h2 {
+    text-align: center;
+  }
+}
+
+.frase:nth-child(even) .contentF h2 {
+  text-align: right;
+}
+.frase:nth-child(even) .imgF {
+  float: right;
+}
+
+.razones {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.razones .card {
+  position: relative;
+  width: 333px;
+  height: 400px;
+  margin: 0 auto;
+  background: #fff;
+  margin: 20px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.razones .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.razones .card .face.face1 {
+  box-sizing: border-box;
+  padding: 50px;
+  bottom: 20px;
+}
+.razones .card .face.face1 h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+.razones .card .face.face1 p {
+  text-align: center;
+}
+.razones .card .face.face1 .imgCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.razones .card .face.face1 .imgCard img {
+  width: 50%;
+}
+.razones .card .face.face2 {
+  background-color: #111;
+  transition: 0.5s;
+}
+.razones .card .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: #fff;
+  transition: 0.5s;
+}
+.razones .card .face.face2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.razones .card:hover .face.face2 {
+  height: 60px;
+}
+.razones .card:hover .face.face2 h2 {
+  font-size: 3em;
+}
+.razones .card:nth-child(1) .face.face2 {
+  background: var(--color-tarjeta-1);
+}
+.razones .card:nth-child(2) .face.face2 {
+  background: var(--color-tarjeta-2);
+}
+.razones .card:nth-child(3) .face.face2 {
+  background: var(--color-tarjeta-3);
+}
+.razones .card:nth-child(4) .face.face2 {
+  background: var(--color-tarjeta-4);
+}
+.razones .card:nth-child(5) .face.face2 {
+  background: var(--color-tarjeta-5);
+}
+.razones .card:nth-child(6) .face.face2 {
+  background: var(--color-tarjeta-6);
+}
+.razones .card:nth-child(7) .face.face2 {
+  background: var(--color-tarjeta-7);
+}
+.razones .card:nth-child(8) .face.face2 {
+  background: var(--color-tarjeta-8);
+}
+.razones .card:nth-child(9) .face.face2 {
+  background: var(--color-tarjeta-9);
+}
+.razones .card:nth-child(10) .face.face2 {
+  background: var(--color-tarjeta-10);
+}
+.razones .card:nth-child(11) .face.face2 {
+  background: var(--color-tarjeta-11);
+}
+.razones .card:nth-child(12) .face.face2 {
+  background: var(--color-tarjeta-12);
+}
+.razones .card:nth-child(13) .face.face2 {
+  background: var(--color-tarjeta-13);
+}
+.razones .card:nth-child(14) .face.face2 {
+  background: var(--color-tarjeta-14);
+}
+.razones .card:nth-child(15) .face.face2 {
+  background: var(--color-tarjeta-15);
+}
+.razones .card:nth-child(16) .face.face2 {
+  background: var(--color-tarjeta-16);
+}
+.razones .card:nth-child(17) .face.face2 {
+  background: var(--color-tarjeta-17);
+}
+.razones .card:nth-child(18) .face.face2 {
+  background: var(--color-tarjeta-18);
+}
+.razones .card:nth-child(19) .face.face2 {
+  background: var(--color-tarjeta-19);
+}
+.razones .card:nth-child(20) .face.face2 {
+  background: var(--color-tarjeta-20);
+}
+.razones .card:nth-child(21) .face.face2 {
+  background: var(--color-tarjeta-21);
+}
+.razones .card:nth-child(22) .face.face2 {
+  background: var(--color-tarjeta-22);
+}
+.razones .card:nth-child(23) .face.face2 {
+  background: var(--color-tarjeta-23);
+}
+
+.music {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 40px;
+}
+.music .title h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.music .audios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.music .audios .audio {
+  padding: 30px;
+}
+.music .audios .audio h4 {
+  text-align: center;
+  color: var(--colo-blanco);
+  font-size: 2em;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=styles.css.map */
